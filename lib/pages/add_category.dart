@@ -91,7 +91,7 @@ class _AddCategoryState extends State<AddCategory> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: NeumorphicTheme.baseColor(context),
-        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: false,
         appBar: NeumorphicAppBar(
           title: _argsHaveCategory
               ? const Text('add_category.title_edit').tr()

@@ -68,7 +68,7 @@ class _TodoPageState extends State<TodoPage> {
         floatingActionButton: CategoryFAB(args: widget.args),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         backgroundColor: NeumorphicTheme.baseColor(context),
-        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: false,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[

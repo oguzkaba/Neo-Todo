@@ -157,7 +157,7 @@ class NeumorphicPopupMenuButtonState<T>
         position: position,
         shape: widget.shape ?? popupMenuTheme.shape,
         color: widget.color ?? nTheme.current.baseColor ?? popupMenuTheme.color,
-        captureInheritedThemes: widget.captureInheritedThemes,
+        // captureInheritedThemes: widget.captureInheritedThemes,
       ).then<void>((T newValue) {
         if (!mounted) {
           return null;

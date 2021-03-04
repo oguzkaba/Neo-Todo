@@ -10,7 +10,7 @@ class Page404 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: NeumorphicTheme.baseColor(context),
-        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: false,
         appBar: NeumorphicAppBar(),
         body: Center(
           child: Column(

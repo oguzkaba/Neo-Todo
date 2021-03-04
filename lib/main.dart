@@ -35,13 +35,17 @@ Future main() async {
 
   runApp(
     EasyLocalization(
-        supportedLocales: [const Locale('en'), const Locale('fr'), const Locale('ru')],
+        supportedLocales: [
+          const Locale('en'),
+          const Locale('fr'),
+          const Locale('ru')
+        ],
         path: 'assets/locales',
         fallbackLocale: const Locale('en'),
         useOnlyLangCode: true,
-        preloaderColor: prefs.getBool('darkMode') == true
-            ? Style.bgColorDark
-            : Style.bgColor,
+        // preloaderColor: prefs.getBool('darkMode') == true
+        //     ? Style.bgColorDark
+        //     : Style.bgColor,
         child: MultiProvider(providers: [
           ChangeNotifierProvider(create: (_) => Todo(), lazy: false),
           ChangeNotifierProvider(create: (_) => Settings(prefs), lazy: false)
